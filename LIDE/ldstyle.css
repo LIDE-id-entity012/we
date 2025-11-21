@@ -6,6 +6,32 @@
   --secondary: #B03060;
   --accent: #10b981;
 
+  
+/* Global Reset (Modern, concise approach) */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and border don't increase element size */
+}
+
+/* Base Typography and Layout */
+html {
+    /* Ensures smooth scroll for anchor links (e.g., scroll indicator) */
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-stack);
+    min-height: 100vh; /* Ensures full vertical scrollability */
+}
+
+/* Base Link Styles */
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
   /* LIGHT MODE (Default) */
   --dark: #0f172a;        /* Main Text */
   --muted: #64748b;       /* Secondary Text */
@@ -262,4 +288,5 @@ footer { background: linear-gradient(135deg, var(--primary), var(--primary-dark)
 .btn-cookie-accept { background: var(--primary); color: #fff; border: none; padding: 8px 20px; border-radius: 30px; font-weight: 600; cursor: pointer; transition: 0.2s; }
 .btn-cookie-accept:hover { transform: scale(1.05); background: var(--primary-dark); }
 .btn-cookie-close { background: transparent; color: #94a3b8; border: none; font-size: 20px; cursor: pointer; padding: 0 5px; }
+
 .btn-cookie-close:hover { color: #fff; }
