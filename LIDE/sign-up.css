@@ -1,0 +1,253 @@
+/* --- 1. RESET & THEME VARIABLES --- */
+:root {
+    /* LIGHT MODE COLORS */
+    --primary: #800000;         /* LIDE Maroon */
+    --primary-dark: #4B0000;
+    
+    --bg-body: #fafbfc;         /* Light Background */
+    --bg-surface: #ffffff;      /* White Card */
+    --input-bg: transparent;    /* Transparent for the "Big Input" style */
+    
+    --text-main: #0f172a;       /* Dark Text */
+    --text-muted: #64748b;      /* Gray Text */
+    --link-text: #800000;       /* Maroon Links in Light Mode */
+    
+    --border: #e2e8f0;          /* Light Border */
+    --shadow-color: rgba(0,0,0,0.05);
+}
+
+/* DARK MODE OVERRIDES */
+[data-theme="dark"] {
+    --bg-body: #0f172a;         /* Dark Slate Background */
+    --bg-surface: #1e293b;      /* Dark Pane */
+    --input-bg: transparent;
+    
+    --text-main: #f8fafc;       /* White Text */
+    --text-muted: #94a3b8;      /* Light Gray Text */
+    --link-text: #ffffff;       /* PURE WHITE Links in Dark Mode */
+    
+    --border: #334155;          /* Dark Border */
+    --shadow-color: rgba(0,0,0,0.5);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+
+body { 
+    height: 100vh; 
+    width: 100%; 
+    background-color: var(--bg-body); 
+    overflow: hidden; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* --- 2. SPLIT LAYOUT --- */
+.split-screen { display: flex; height: 100vh; width: 100%; }
+
+.left-pane {
+    flex: 1.7;
+    position: relative;
+    background-color: #0077be; /* Fallback Blue */
+    overflow: hidden;
+}
+
+.right-pane {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg-surface); /* Variable */
+    position: relative;
+    padding: 40px;
+    transition: background-color 0.3s ease;
+}
+
+@media (max-width: 900px) { .left-pane { display: none; } }
+
+/* --- 3. THEME TOGGLE BUTTON --- */
+.theme-btn {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    background: transparent;
+    border: 1px solid var(--border);
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: var(--text-main);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    z-index: 10;
+}
+.theme-btn:hover { background-color: var(--border); }
+.theme-btn svg { width: 20px; height: 20px; }
+.theme-btn .hidden { display: none; }
+
+/* --- 4. FORM CONTAINER --- */
+.form-box {
+    width: 100%;
+    max-width: 500px;
+    min-height: 300px;
+    position: relative;
+}
+
+/* PROGRESS BAR */
+.progress-container {
+    width: 100%;
+    height: 4px;
+    background: var(--border); /* Adaptive gray */
+    margin-bottom: 40px;
+    border-radius: 2px;
+}
+
+.progress-bar {
+    height: 100%;
+    background: var(--primary); /* Maroon */
+    width: 33%;
+    transition: width 0.4s ease;
+    box-shadow: 0 0 10px rgba(128, 0, 0, 0.3);
+}
+
+/* --- 5. STEP LOGIC --- */
+.step {
+    display: none;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.4s ease;
+}
+
+.step.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+    animation: fadeIn 0.5s forwards;
+}
+
+/* STEP NUMBER */
+.step-number {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* LABELS */
+.big-label {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--text-main); /* Adaptive Text */
+    margin-bottom: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+}
+
+/* INPUTS */
+.big-input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1.5rem;
+    border: none;
+    border-bottom: 2px solid var(--border); /* Adaptive Border */
+    outline: none;
+    color: var(--text-main); /* Adaptive Text */
+    background: transparent;
+    transition: border-color 0.3s;
+    border-radius: 0;
+    font-weight: 500;
+}
+
+.big-input:focus {
+    border-bottom-color: var(--primary);
+}
+
+.big-input::placeholder {
+    color: var(--text-muted);
+    font-weight: 300;
+}
+
+/* --- 6. BUTTONS --- */
+.btn-container {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.next-btn, .submit-btn-final {
+    padding: 14px 32px;
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 4px 16px rgba(128, 0, 0, 0.3);
+}
+
+.next-btn:hover, .submit-btn-final:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(128, 0, 0, 0.4);
+}
+
+.back-btn {
+    background: transparent;
+    border: none;
+    color: var(--text-muted);
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.back-btn:hover {
+    color: var(--text-main);
+    text-decoration: underline;
+}
+
+.hint {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-left: 10px;
+}
+
+/* BOTTOM LINK */
+.fixed-bottom {
+    position: absolute;
+    bottom: 20px;
+    left: 0; 
+    width: 100%;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.fixed-bottom a { 
+    color: var(--link-text); /* White in Dark Mode */
+    font-weight: 600; 
+    text-decoration: none;
+}
+.fixed-bottom a:hover { text-decoration: underline; }
+
+/* --- 7. ANIMATIONS --- */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.shake { animation: shake 0.4s cubic-bezier(.36,.07,.19,.97) both; border-bottom-color: #ef4444 !important; }
+
+@keyframes shake {
+    10%, 90% { transform: translate3d(-1px, 0, 0); }
+    20%, 80% { transform: translate3d(2px, 0, 0); }
+    30%, 50%, 70% { transform: translate3d(-4px, 0, 0); }
+    40%, 60% { transform: translate3d(4px, 0, 0); }
+}

@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LIDE — Digital Transformation Made Simple</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="ldstyle.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="nav">
+        <a href="#home" class="brand">
+          <div class="logo">L</div>
+          <div class="brand-text">
+            <h1>LIDE</h1>
+            <p>Digital Transformation</p>
+          </div>
+        </a>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#packages">Packages</a></li>
+            <li><a href="#contact">Connect</a></li>
+          </ul>
+        </nav>
+        
+        <div class="nav-actions">
+            <button id="theme-toggle" class="icon-btn" aria-label="Toggle Dark Mode">
+                <svg class="sun-icon hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+                </svg>
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+                </svg>
+            </button>
+
+            <a href="log-in.html" class="icon-btn" aria-label="Sign In">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                </svg>
+            </a>
+
+            <a class="cta" href="#contact">Connect</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-content">
+          <h2>Transform Your Digital Presence</h2>
+          <p>Professional Front Access packages for individuals, organizations, and enterprises. Choose your plan and let us build, maintain, and grow your digital ecosystem.</p>
+          <div class="hero-cta">
+            <a href="#packages" class="btn-primary">Explore Packages</a>
+            <a href="#about" class="btn-secondary">Learn About LIDE</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="section-header">
+          <h2>About LIDE</h2>
+          <p>A comprehensive framework designed for consistency, scalability, and exceptional user experiences.</p>
+        </div>
+        
+        <div class="about-content">
+          <div class="about-intro">
+            <p>The LIDE Framework is a sophisticated, layered design system engineered to deliver consistency and reusability across every digital touchpoint. Built on precise proportional scaling and predictable vertical rhythm, our framework ensures optimal readability and seamless responsiveness. From typography to interactive components, every element is crafted to adapt beautifully across devices while maintaining accessibility and visual excellence.</p>
+          </div>
+
+          <div class="vision-mission-grid">
+            <div class="vm-card">
+              <span class="vm-icon">🎯</span>
+              <h3>Our Vision</h3>
+              <p>To establish the gold standard in design systems—where predictability meets creativity. We envision digital experiences that are not only visually stunning but intuitively consistent, empowering organizations to deliver seamless user journeys that inspire confidence and drive engagement.</p>
+            </div>
+
+            <div class="vm-card">
+              <span class="vm-icon">🚀</span>
+              <h3>Our Mission</h3>
+              <p>To architect intelligent, reusable design components that scale effortlessly. Through strict layering, responsive flexibility, and accessible interfaces, we deliver systems that eliminate guesswork—enabling teams to build faster, maintain easier, and create experiences that truly resonate with users across every device.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="packages">
+      <div class="container">
+        <div class="section-header">
+          <h2>Front Access Packages</h2>
+          <p>Comprehensive digital solutions tailored to your needs. From startup presence to enterprise ecosystems.</p>
+        </div>
+
+        <div class="category-tabs">
+          <button class="tab active" data-category="establish">Establish</button>
+          <button class="tab" data-category="elevate">Elevate</button>
+          <button class="tab" data-category="excel">Excel</button>
+        </div>
+
+        <div class="package-category" data-category="establish">
+          <div class="pricing-grid">
+            <div class="pricing-card">
+              <span class="tier-badge">INITIATE</span>
+              <h3>YOUR DIGITAL BREATH</h3>
+              <div class="price">R119<span>/pm</span></div>
+              <p style="color:var(--muted);margin-bottom:20px">Get visible, accessible and reacheable</p>
+              <ul class="features">
+                <li>Website (Up to 3 pages)</li>
+                <li>social media management (1 acc)</li>
+              </ul>
+              <a href="#contact" class="card-cta">I want this</a>
+            </div>
+
+            <div class="pricing-card">
+              <span class="tier-badge">Structure</span>
+              <h3>YOUR DIGITAL STEPS</h3>
+              <div class="price">R339<span>/pm</span></div>
+              <p style="color:var(--muted);margin-bottom:20px">Be trusted, stay close</p>
+              <ul class="features">
+                <li>Website (up to 8 pages)</li>
+                <li>Social media management (3 acc)</li>
+                <li>Communication channel (1 ch)</li>
+                <li>Content consult</li>
+              </ul>
+              <a href="#contact" class="card-cta">I want this</a>
+            </div>
+
+            <div class="pricing-card">
+              <span class="tier-badge">Solidify</span>
+              <h3>YOUR DIGITAL FOOTPRINT</h3>
+              <div class="price">R559<span>/month</span></div>
+              <p style="color:var(--muted);margin-bottom:20px">Leveraging digital services, instantly reliable</p>
+              <ul class="features">
+                <li>Website (Functional limit)</li>
+                <li>Social media management (3 acc)</li>
+                <li>Communication channel (2 ch)</li>
+                <li>Content consult</li>
+                <li>Data access</li>
+                <li>Virtual Assistant (1 ast)</li>
+              </ul>
+              <a href="#contact" class="card-cta">I want this</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="package-category" data-category="elevate" style="display:none">
+          <div class="pricing-grid">
+            <div class="pricing-card">
+              <span class="tier-badge">Startup</span>
+              <h3>Front Access</h3>
+              <div class="price">R1299<span>/pm</span></div>
+              <p style="color:var(--muted);margin-bottom:20px">Everything "SOLID" +</p>
+              <ul class="features">
+                <li>Basic 2-4 page website</li>
+                <li>Up to 2 social media platforms</li>
+                <li>Up to 2 communication channels</li>
+                <li>Professional branding</li>
+              </ul>
+              <a href="#contact" class="card-cta">I Want This</a>
+            </div>
+
+            <div class="pricing-card">
+              <span class="tier-badge">Scale</span>
+              <h3>Front Access</h3>
+              <div class="price">2399<span>/pm</span></div>
+              <p style="color:var(--muted);margin-bottom:20px"></p>
+              <ul class="features">
+                <li>Purposeful website (4+ pages)</li>
+                <li>Up to 4 social media platforms</li>
+                <li>Up to 3 communication channels</li>
+                <li>Community building (digital)</li>
+                <li>Enhanced analytics</li>
+              </ul>
+              <a href="#contact" class="card-cta">I want This</a>
+            </div>
+
+            <div class="pricing-card">
+              <span class="tier-badge">Advance</span>
+              <h3>Front Access</h3>
+              <div class="price">R3499<span>/month</span></div>
+              <p style="color:var(--muted);margin-bottom:20px">Everything "ESTABLISHED" +</p>
+              <ul class="features">
+                <li>Full function dynamic website</li>
+                <li>Up to 7 social media platforms</li>
+                <li>Chatbot integration</li>
+                <li>Up to 5 communication channels</li>
+                <li>Community building (digital)</li>
+                <li>Priority support</li>
+              </ul>
+              <a href="#contact" class="card-cta">I Want This</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="package-category" data-category="excel" style="display:none">
+          <div class="pricing-grid">
+            <div class="pricing-card">
+              <span class="tier-badge">Startup</span>
+              <h3>Front Access</h3>
+              <div class="price">R4499<span>/month</span></div>
+              <p style="color:var(--muted);margin-bottom:20px">Everything "ESTABLISHED & ELEVATED" +</p>
+              <ul class="features">
+                <li>Branded landing platform</li>
+                <li>Verified communication channels</li>
+                <li>Up to 2 social media platforms</li>
+                <li>Monthly consultation check-ins</li>
+                <li>Performance summary reports</li>
+              </ul>
+              <a href="#contact" class="card-cta">I Want This</a>
+            </div>
+
+            <div class="pricing-card">
+              <span class="tier-badge">Scale</span>
+              <h3>Front Access</h3>
+              <div class="price">R7799<span>/month</span></div>
+              <p style="color:var(--muted);margin-bottom:20px">Everything "ESTABLISHED & ELEVATED" +</p>
+              <ul class="features">
+                <li>Multi-page website (up to 6 pages)</li>
+                <li>Up to 4 social media platforms</li>
+                <li>Automated inquiry systems</li>
+                <li>Monthly performance reviews</li>
+                <li>Analytics overview</li>
+                <li>Add-ons: Chatbot, Newsletter, Verification</li>
+              </ul>
+              <a href="#contact" class="card-cta">I Want This</a>
+            </div>
+
+            <div class="pricing-card">
+              <span class="tier-badge">Advance</span>
+              <h3>Front Access</h3>
+              <div class="price">R1099<span>/pm</span></div>
+              <p style="color:var(--muted);margin-bottom:20px">Everything "ESTABLISHED & ELEVATED" +</p>
+              <ul class="features">
+                <li>Dynamic website (up to 10 pages)</li>
+                <li>Up to 6 social media platforms</li>
+                <li>Advanced automation tools</li>
+                <li>Analytics dashboard</li>
+                <li>Dedicated support</li>
+                <li>Multiple add-ons available</li>
+              </ul>
+              <a href="#contact" class="card-cta">I Want This</a>
+            </div>
+          </div>
+        </div>
+
+       <div class="cross-nav-buttons">
+        <a href="#projects.html" class="btn-primary">Projects</a>
+        <a href="#enterprise.html" class="btn-primary">Enterprise</a>
+      </div>
+
+        <div class="note-box">
+          <h4>Disclaimer</h4>
+          <p>These packages highlight the benefits, and clients must be aware what those benefits are. T&Cs apply.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="why-choose">
+      <div class="container">
+        <div class="section-header">
+          <h2>Why Choose LIDE?</h2>
+          <p>We combine strategy, technology, and ongoing support to deliver digital solutions that work.</p>
+        </div>
+        <div class="why-grid">
+          <div class="why-card">
+            <h3>🌩 Lightning Setup</h3>
+            <p style="color:var(--muted);margin-top:12px">Get online quickly with our streamlined onboarding process. Your digital presence launches in days, not months.</p>
+          </div>
+          <div class="why-card">
+            <h3>🔧 Management and Maintanance</h3>
+            <p style="color:var(--muted);margin-top:12px">We handle everything from maintenance to updates. Focus on your business while we manage your digital infrastructure.</p>
+          </div>
+          <div class="why-card">
+            <h3>📈 Room to scale</h3>
+            <p style="color:var(--muted);margin-top:12px">Start small and scale up as you grow. Upgrade your plan anytime to access more features and channels.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2>Get Started Today</h2>
+          <p>Tell us about your needs and we'll help you choose the perfect package.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-form">
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" required placeholder="Your full name">
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" required placeholder="you@example.com">
+              </div>
+              <div class="form-group">
+                <label for="package">Interested Package</label>
+                <select id="package" required>
+                  <option value="">Select a package type</option>
+                  <option value="individual">Individual Package</option>
+                  <option value="organization">Organization Package</option>
+                  <option value="enterprise">Enterprise Package</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Tell us about your needs</label>
+                <textarea id="message" required placeholder="Describe your project or goals..."></textarea>
+              </div>
+              <button type="submit" class="btn-primary">Send Message</button>
+              <p id="formStatus" style="margin-top:16px;color:var(--muted);font-size:14px"></p>
+            </form>
+          </div>
+          <div class="contact-info">
+            <div class="info-card">
+              <h4>📧</h4>
+              <p>linkingidentities@gmail.com</p>
+            </div>
+            <div class="info-card">
+              <h4>📞</h4>
+              <p>+27 76 763 5053</p>
+              <p>Mon - Fri: 07:00 - 15:00</p>
+            </div>
+            <div class="info-card">
+              <h4>📍</h4>
+              <p>Pretoria</p>
+              <p>Remote</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="cookie-banner" class="cookie-banner">
+    <div class="cookie-text">We use cookies to improve LIDE.</div>
+    <div class="cookie-actions">
+        <button id="accept-cookies" class="btn-cookie-accept">OK</button>
+        <button id="decline-cookies" class="btn-cookie-close">✕</button>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h4>Navigation 🧭</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Company</a></li>
+            <li><a href="#why-choose">Blog</a></li>
+            <li><a href="#packages">Products</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Resources 🛠</h4>
+          <ul>
+            <li><a href="#contact">Support</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Policies</a></li>
+            <li><a href="#">Legal</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Hello World 🌍</h4>
+          <div class="social-links">
+            <a href="#" class="social-fb" aria-label="Facebook">
+              <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+
+            <a href="#" class="social-x" aria-label="X">
+              <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+
+            <a href="#" class="social-li" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+
+            <a href="#" class="social-ig" aria-label="Instagram">
+              <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+
+            <a href="#" class="social-rd" aria-label="Reddit">
+              <svg viewBox="0 0 24 24"><path d="M14.238 15.348c.085.084.085.221 0 .306-.465.462-1.194.687-2.231.687l-.008-.002-.008.002c-1.036 0-1.766-.225-2.231-.688-.085-.084-.085-.221 0-.305.084-.084.222-.084.307 0 .379.377 1.008.561 1.924.561l.008.002.008-.002c.915 0 1.544-.184 1.924-.561.085-.084.223-.084.307 0zm-3.44-2.418c0-.507-.414-.919-.922-.919-.509 0-.923.412-.923.919 0 .506.414.918.923.918.508 0 .922-.411.922-.918zm13.202-.93c-3.925-2.573-3.043-2.655-3.138-2.95l.826-2.728 5.666 1.225c.284.081.51.291.622.549.064.151.08.306.061.456-.061.504-.499.876-1.013.858-.508-.019-.896-.422-.896-.93 0-.011-.002-.021-.003-.031l-5.196-1.124-.744 2.454c2.98.82 5.033 2.715 5.033 4.947 0 2.759-3.123 5.005-6.973 5.005s-6.975-2.246-6.975-5.005c0-2.212 2.014-4.092 4.953-4.922l-1.06-3.499c-.13-.428.102-.885.531-1.015l6.321-1.917c.432-.13.89.102 1.02.531.128.425-.103.88-.529 1.011l-5.716 1.734.916 3.022c.016-.005.032-.009.048-.013.919-.225 1.879-.345 2.868-.345 4.663 0 8.459 1.835 8.459 4.097 0 1.145-.979 2.192-2.708 2.94z"/></svg>
+            </a>
+
+            <a href="#" class="social-tt" aria-label="TikTok">
+              <svg viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93v8.88c-.08 3.25-2.27 5.94-5.42 6.63-3.94.84-7.83-1.76-8.67-5.68-.85-3.94 1.75-7.83 5.68-8.67 1.24-.27 2.52-.22 3.75.14v4.16c-.77-.35-1.65-.47-2.5-.28-1.73.38-2.86 2.08-2.53 3.8.33 1.72 2.03 2.86 3.75 2.53 1.58-.3 2.76-1.62 2.83-3.23V.02z"/></svg>
+            </a>
+
+            <a href="#" class="social-wa" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.008-.57-.008-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            </a>
+
+            <a href="#" class="social-yt" aria-label="YouTube">
+              <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> LIDE. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // 1. TAB LOGIC (Original)
+    const tabs = document.querySelectorAll('.tab');
+    const categories = document.querySelectorAll('.package-category');
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            tabs.forEach(t => t.classList.remove('active'));
+            tab.classList.add('active');
+            const category = tab.getAttribute('data-category');
+            categories.forEach(c => {
+                c.style.display = c.getAttribute('data-category') === category ? 'block' : 'none';
+            });
+        });
+    });
+
+    // 2. DARK MODE LOGIC
+    const themeBtn = document.getElementById('theme-toggle');
+    const html = document.documentElement;
+    const sunIcon = document.querySelector('.sun-icon');
+    const moonIcon = document.querySelector('.moon-icon');
+
+    // Check saved theme
+    if (localStorage.getItem('theme') === 'dark') {
+        html.setAttribute('data-theme', 'dark');
+        sunIcon.classList.remove('hidden');
+        moonIcon.classList.add('hidden');
+    } else {
+        sunIcon.classList.add('hidden');
+        moonIcon.classList.remove('hidden');
+    }
+
+    themeBtn.addEventListener('click', () => {
+        if (html.getAttribute('data-theme') === 'dark') {
+            html.removeAttribute('data-theme');
+            localStorage.setItem('theme', 'light');
+            sunIcon.classList.add('hidden');
+            moonIcon.classList.remove('hidden');
+        } else {
+            html.setAttribute('data-theme', 'dark');
+            localStorage.setItem('theme', 'dark');
+            sunIcon.classList.remove('hidden');
+            moonIcon.classList.add('hidden');
+        }
+    });
+
+    // 3. COOKIE BAR LOGIC
+    const cookieBanner = document.getElementById('cookie-banner');
+    const acceptBtn = document.getElementById('accept-cookies');
+    const declineBtn = document.getElementById('decline-cookies');
+
+    if (!localStorage.getItem('cookiesAccepted')) {
+        setTimeout(() => {
+            cookieBanner.classList.add('show');
+        }, 1500);
+    }
+
+    acceptBtn.addEventListener('click', () => {
+        localStorage.setItem('cookiesAccepted', 'true');
+        cookieBanner.classList.remove('show');
+    });
+
+    declineBtn.addEventListener('click', () => {
+        cookieBanner.classList.remove('show');
+    });
+
+    // 4. YEAR
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
